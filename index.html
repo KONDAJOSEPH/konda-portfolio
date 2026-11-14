@@ -7,12 +7,15 @@
     <meta name="description" content="Konda Joseph is a frontend developer in Kampala, Uganda, building web apps with JavaScript, HTML, CSS and Next.js. See projects, skills and how to get in touch.">
     <meta name="author" content="Konda Joseph">
     <meta name="theme-color" content="#232222">
+    <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Konda Joseph | Frontend Developer">
     <meta property="og:description" content="Frontend developer in Kampala building clean, fast web applications. View my projects and get in touch.">
     <meta property="og:image" content="Images/10.jpeg">
     <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Konda Joseph | Frontend Developer">
+    <meta name="twitter:description" content="Frontend developer in Kampala building clean, fast web applications.">
 
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23009dff'/%3E%3Cstop offset='1' stop-color='%23ff00ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='white'%3EKJ%3C/text%3E%3C/svg%3E">
 
@@ -25,6 +28,7 @@
     <script>
         /* Apply saved theme before paint to avoid a flash */
         try {
+            document.documentElement.classList.add("js");
             var t = localStorage.getItem("theme");
             if (t) document.documentElement.setAttribute("data-theme", t);
         } catch (e) {}
@@ -47,7 +51,7 @@
     <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
     <header class="header">
-        <a href="#about" class="logo" ><span>KONDA JOSEPH</span></a>
+        <a href="#about" class="logo"><span>KONDA JOSEPH</span></a>
         <nav aria-label="Main">
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
@@ -66,52 +70,21 @@
         <a class="Visit-btn" href="https://github.com/KondaJoseph" target="_blank" rel="noopener">Visit GitHub</a>
     </header>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <main>
-
-
-
-
-
 
         <!-- ===== Hero ===== -->
 
-
-
-
-
-
-
-
-
-
         <section id="about" class="about">
             <div class="about-container">
-                <img src="Images/52.jpeg" alt="Portrait of Konda Joseph" class="profile-pic" width="300" height="300">
+                <img src="Images/52.jpeg" alt="Portrait of Konda Joseph" class="profile-pic" width="500" height="500" fetchpriority="high">
                 <div class="info-box">
                     <div class="text">
                         <h3>Hi, I am</h3>
                         <h1>KONDA JOSEPH</h1>
                         <span class="role">Frontend Developer</span>
                     </div>
-                    <p class="bio">I build clean, responsive web applications, from patient dashboards to money-transfer apps. Based in Kampala, Uganda, and open to new opportunities.</p>
-                    <p class="bio">My projects cover a wide range of real needs: a dental care app for managing appointments and patient records, a secure money transfer app, a health tracker that supports underserved communities, and a food ordering platform for local restaurants. Building across healthcare, finance, community aid and everyday commerce has taught me to start from the people who will use the product and to keep every screen simple and clear.</p>
-                    <p class="bio">I am also drawn to work that connects and protects people, such as the safe and confidential space for students and the platform that brings Nuba Mountains University students together. Each project is deployed live on Vercel with its code on GitHub, so anyone can try it and see how it was built.</p>
+                    <p class="availability"><span class="dot" aria-hidden="true"></span> Open to new opportunities</p>
+                    <p class="bio">Frontend developer in Kampala, Uganda, who loves building clean, responsive web apps and learning on every team project.</p>
                     <div class="btn-group">
                         <a class="btn btn-solid" href="Konda-Joseph-CV.pdf" download>Download CV</a>
                         <a class="btn" href="#contact">Contact Me</a>
@@ -122,47 +95,22 @@
                     </div>
                 </div>
             </div>
-            <a href="#skills" class="scroll-hint" aria-label="Scroll to skills"><i class="fa-solid fa-chevron-down"></i></a>
-        </section>
-
-        <!-- ===== Stats ===== -->
-        <div class="stats" aria-label="At a glance">
-            <div class="stat"><strong data-count="4">4</strong><span>Live projects</span></div>
+            <div class="stats" aria-label="At a glance">
+            <div class="stat"><strong data-count="6">6</strong><span>Live projects</span></div>
             <div class="stat"><strong data-count="2" data-suffix="+">2+</strong><span>Years coding</span></div>
             <div class="stat"><strong data-count="7">7</strong><span>Core technologies</span></div>
             <div class="stat"><strong>Kampala</strong><span>Based in Uganda</span></div>
         </div>
-
-
-
-
-
-
-
-
-
-
+        </section>
 
 
         <!-- ===== Skills ===== -->
-
-
-
-
-
-
-
-
-
-
-
 
         <section id="skills" class="skills">
             <h2 class="section-title">Skills</h2>
             <div class="skills-grid">
                 <div class="skill-group">
                     <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
-                    <p class="bio">I build the part of an app that people see and use, with HTML5, CSS3 and JavaScript, and I use Next.js to structure larger applications with several pages and shared components. I design every layout to be responsive, so the dashboards and apps in my projects work well on both phones and computers.</p>
                     <ul class="chips">
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -173,7 +121,6 @@
                 </div>
                 <div class="skill-group">
                     <h3><i class="fa-solid fa-database"></i> Data</h3>
-                    <p class="bio">I design and implement databases that organise the information my projects depend on, such as patient records and appointments, food orders and money transfers. Careful data design keeps records accurate and easy to find, and it makes each app dependable for the people who rely on it.</p>
                     <ul class="chips">
                         <li>Database design</li>
                         <li>Database implementation</li>
@@ -181,7 +128,6 @@
                 </div>
                 <div class="skill-group">
                     <h3><i class="fa-solid fa-code-branch"></i> Workflow</h3>
-                    <p class="bio">I work with Git and GitHub, using separate branches so that new features can be built and tested without breaking my teammates' work. I deploy my projects on Vercel with live demo links, and I enjoy working in a team, planning together and reviewing each other's code.</p>
                     <ul class="chips">
                         <li>Git</li>
                         <li>GitHub</li>
@@ -193,32 +139,7 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- ===== Experience ===== -->
-
-
-
-
-
 
         <section id="experience" class="experience">
             <h2 class="section-title">Experience</h2>
@@ -228,154 +149,127 @@
                         <i class="fa-solid fa-code"></i>
                         <span>Web Programming</span>
                         <h3>2 years</h3>
-                        <p>Writing clean, efficient code for web applications that provide great user experiences using languages like JavaScript, HTML, and CSS.</p>
+                        <p>Building clean web apps with JavaScript, HTML and CSS.</p>
                     </div>
                     <div class="grid-card">
                         <i class="fa-solid fa-chart-column"></i>
                         <span>Web and App Development</span>
                         <h3>1 year</h3>
-                        <p>Designing and developing web and mobile applications.</p>
+                        <p>Designing and building web and mobile apps.</p>
                     </div>
                     <div class="grid-card">
                         <i class="fa-solid fa-laptop"></i>
                         <span>Databases</span>
                         <h3>2 years</h3>
-                        <p>Designing and implementing database solutions.</p>
+                        <p>Designing and implementing databases.</p>
                     </div>
                     <div class="grid-card">
                         <i class="fa-solid fa-diagram-project"></i>
                         <span>Software Engineering / Teamwork</span>
                         <h3>1 year</h3>
-                        <p>Planning, using GitHub for version control and collaboration, working with branches, testing and deploying on Vercel without breaking other people's work.</p>
+                        <p>Planning, Git branching, testing and deploying on Vercel.</p>
                     </div>
                 </div>
-                <img src="Images/50.jpeg" alt="Developer working at a desk with code on screen" loading="lazy" width="400" height="400">
+                <div class="photo">
+                    <img src="Images/50.jpeg" alt="Developer working at a desk with code on screen" loading="lazy" width="225" height="400">
+                </div>
+            </div>
+            <div class="process" aria-label="How I work">
+                <h3 class="subhead">How I work</h3>
+                <ol class="process-steps">
+                    <li><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i><strong>Plan</strong><span>Start from the people who will use the product.</span></li>
+                    <li><i class="fa-solid fa-code" aria-hidden="true"></i><strong>Build</strong><span>Clean, responsive code on separate Git branches.</span></li>
+                    <li><i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i><strong>Test</strong><span>Check every feature before it is merged.</span></li>
+                    <li><i class="fa-solid fa-rocket" aria-hidden="true"></i><strong>Deploy</strong><span>Ship live on Vercel with the code on GitHub.</span></li>
+                </ol>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!-- ===== Projects ===== -->
 
-
-
-
-
-
         <section id="projects" class="projects">
-            <h2 class="section-title">Recent Projects</h2>
-            <div class="projects-grid">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-lead">One website and one system, both live on Vercel.</p>
+            <div class="projects-grid" id="projects-grid">
 
                 <article class="projects-card">
-                    <img src="Images/15.jpeg" alt="Good Hands Dental Care project preview" loading="lazy">
+                    <img src="Images/15.jpeg" alt="Good Hands Dental Care project preview" loading="lazy" width="400" height="190">
+                    <span class="tag">System</span>
                     <h3>Good-Hands-Dental-Care</h3>
-                    <p>Web app for managing appointments and patient records.</p>
+                    <p>Manage appointments and patient records.</p>
                     <div class="btn-group">
-                        <a class="btn" href="https://dental-care-dashboard-kjlk.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-                        <a class="btn" href="https://github.com/KondaJoseph/Good-Hands-Dental-Care" target="_blank" rel="noopener">Git Repo</a>
+                        <a class="btn" href="https://dental-care-dashboard-kjlk.vercel.app" target="_blank" rel="noopener" aria-label="Live demo of Good-Hands-Dental-Care">Live Demo</a>
+                        <a class="btn" href="https://github.com/KondaJoseph/Good-Hands-Dental-Care" target="_blank" rel="noopener" aria-label="Git repository of Good-Hands-Dental-Care">Git Repo</a>
                     </div>
                 </article>
 
                 <article class="projects-card">
-                    <img src="Images/16.jpeg" alt="NAS Money Transfer project preview" loading="lazy">
-                    <h3>NAS Money Transfer</h3>
-                    <p>Secure app for sending and receiving money.</p>
-                    <div class="btn-group">
-                        <a class="btn" href="https://nas-next-app.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-                        <a class="btn" href="https://github.com/KondaJoseph/nas-next-app" target="_blank" rel="noopener">Git Repo</a>
-                    </div>
-                </article>
-
-                <article class="projects-card">
-                    <img src="Images/18.jpeg" alt="Nuba Hands relief and health tracker preview" loading="lazy">
-                    <h3>Nuba Hands-Relief and Health Tracker</h3>
-                    <p>A web application for tracking health metrics and providing relief services to underserved communities.</p>
-                    <div class="btn-group">
-                        <a class="btn" href="https://samaritan-aid.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-                        <a class="btn" href="https://github.com/KondaJoseph/samaritan-aid" target="_blank" rel="noopener">Git Repo</a>
-                    </div>
-                </article>
-
-                <article class="projects-card">
-                    <img src="Images/17.jpeg" alt="NCA Safe Space project preview" loading="lazy">
-                    <h3>NCA Safe Space - Frontend</h3>
-                    <p>A secure, user-centered web platform that gives students a safe and confidential environment.</p>
-                    <div class="btn-group">
-                        <a class="btn" href="https://nca-safe-space-frontend.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-                        <a class="btn" href="https://github.com/KONDAJOSEPH/nca-safe-space-frontend" target="_blank" rel="noopener">Git Repo</a>
-                    </div>
-                </article>
-
-
-
-       <article class="projects-card">
-                    <img src="Images/21.jpeg" alt="Kabalagala-bites project preview" loading="lazy">
+                    <img src="Images/21.jpeg" alt="Kabalagala-bites project preview" loading="lazy" width="400" height="190">
+                    <span class="tag">Website</span>
                     <h3>Kabalagala-bites</h3>
-                    <p>A web application for ordering and delivering food from local restaurants.</p>
+                    <p>Food ordering and delivery from local restaurants.</p>
                     <div class="btn-group">
-                        <a class="btn" href="https://kabalagala-bites.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-                        <a class="btn" href="https://github.com/KONDAJOSEPH/kabalagala-bites" target="_blank" rel="noopener">Git Repo</a>
+                        <a class="btn" href="https://kabalagala-bites.vercel.app" target="_blank" rel="noopener" aria-label="Live demo of Kabalagala-bites">Live Demo</a>
+                        <a class="btn" href="https://github.com/KONDAJOSEPH/kabalagala-bites" target="_blank" rel="noopener" aria-label="Git repository of Kabalagala-bites">Git Repo</a>
                     </div>
                 </article>
 
+                <article class="projects-card project-extra" hidden>
+                    <img src="Images/16.jpeg" alt="NAS Money Transfer project preview" loading="lazy" width="400" height="190">
+                    <span class="tag">System</span>
+                    <h3>NAS Money Transfer</h3>
+                    <p>Send and receive money securely.</p>
+                    <div class="btn-group">
+                        <a class="btn" href="https://nas-next-app.vercel.app" target="_blank" rel="noopener" aria-label="Live demo of NAS Money Transfer">Live Demo</a>
+                        <a class="btn" href="https://github.com/KondaJoseph/nas-next-app" target="_blank" rel="noopener" aria-label="Git repository of NAS Money Transfer">Git Repo</a>
+                    </div>
+                </article>
 
+                <article class="projects-card project-extra" hidden>
+                    <img src="Images/18.jpeg" alt="Nuba Hands relief and health tracker preview" loading="lazy" width="400" height="190">
+                    <span class="tag">System</span>
+                    <h3>Nuba Hands-Relief and Health Tracker</h3>
+                    <p>Health tracking and relief services for underserved communities.</p>
+                    <div class="btn-group">
+                        <a class="btn" href="https://samaritan-aid.vercel.app" target="_blank" rel="noopener" aria-label="Live demo of Nuba Hands-Relief and Health Tracker">Live Demo</a>
+                        <a class="btn" href="https://github.com/KondaJoseph/samaritan-aid" target="_blank" rel="noopener" aria-label="Git repository of Nuba Hands-Relief and Health Tracker">Git Repo</a>
+                    </div>
+                </article>
 
- <article class="projects-card">
-                    <img src="Images/23.jpeg" alt="Nuba Mountains Students Association project preview" loading="lazy">
+                <article class="projects-card project-extra" hidden>
+                    <img src="Images/17.jpeg" alt="NCA Safe Space project preview" loading="lazy" width="400" height="190">
+                    <span class="tag">Website</span>
+                    <h3>NCA Safe Space - Frontend</h3>
+                    <p>A safe, confidential space for students.</p>
+                    <div class="btn-group">
+                        <a class="btn" href="https://nca-safe-space-frontend.vercel.app" target="_blank" rel="noopener" aria-label="Live demo of NCA Safe Space - Frontend">Live Demo</a>
+                        <a class="btn" href="https://github.com/KONDAJOSEPH/nca-safe-space-frontend" target="_blank" rel="noopener" aria-label="Git repository of NCA Safe Space - Frontend">Git Repo</a>
+                    </div>
+                </article>
+
+                <article class="projects-card project-extra" hidden>
+                    <img src="Images/23.jpeg" alt="Nuba Mountains Students Association project preview" loading="lazy" width="400" height="190">
+                    <span class="tag">System</span>
                     <h3>nuba-students-association</h3>
-                    <p>Platform for managing and connecting students at Nuba Mountains University.</p>
+                    <p>Connecting students at Nuba Mountains University.</p>
                     <div class="btn-group">
-                        <a class="btn" href="https://my-nuba-mountains-students-associat.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-                        <a class="btn" href="https://github.com/KONDAJOSEPH/my-nuba-mountains-students-association" target="_blank" rel="noopener">Git Repo</a>
+                        <a class="btn" href="https://my-nuba-mountains-students-associat.vercel.app" target="_blank" rel="noopener" aria-label="Live demo of nuba-students-association">Live Demo</a>
+                        <a class="btn" href="https://github.com/KONDAJOSEPH/my-nuba-mountains-students-association" target="_blank" rel="noopener" aria-label="Git repository of nuba-students-association">Git Repo</a>
                     </div>
                 </article>
-
-
 
             </div>
-            <p class="more-link"><a href="https://github.com/KondaJoseph?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+            <div class="projects-actions">
+                <button type="button" class="btn" id="projects-toggle" aria-expanded="false" aria-controls="projects-grid" data-more="Show all projects (6)" data-less="Show fewer projects">Show all projects (6)</button>
+            </div>
+            <p class="more-link"><a href="https://github.com/KondaJoseph?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!-- ===== Contact ===== -->
 
-
-
-
-
-
-
-
         <section id="contact" class="contact">
             <h2 class="section-title">Contact Me</h2>
-            <p class="section-lead">Have a project or a role in mind? Send a message and I will reply as soon as I can.</p>
-
-
+            <p class="section-lead">Have a project or role in mind? Send me a message.</p>
 
             <div class="contact-layout">
                 <div class="contact-container">
@@ -389,8 +283,6 @@
                         </div>
                     </div>
 
-
-
                     <div class="contact-card">
                         <i class="fa-solid fa-phone"></i>
                         <h3>Phone</h3>
@@ -402,8 +294,6 @@
                         </div>
                     </div>
 
-
-
                     <div class="contact-card">
                         <i class="fa-solid fa-location-dot"></i>
                         <h3>Location</h3>
@@ -413,8 +303,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                 <form class="contact-form" id="contact-form" novalidate>
                     <h3>Send a message</h3>
@@ -430,28 +318,18 @@
                     </div>
                     <div class="field">
                         <label for="cf-message">Message</label>
-                        <textarea id="cf-message" name="message" rows="5" required></textarea>
+                        <textarea id="cf-message" name="message" rows="4" required></textarea>
                         <small class="error" data-for="cf-message"></small>
                     </div>
                     <button type="submit" class="btn btn-solid">Send message</button>
                     <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
                 </form>
 
-
             </div>
-
 
         </section>
 
-
     </main>
-
-
-
-
-
-
-
 
     <footer class="footer">
         <div class="footer-inner">
@@ -469,13 +347,6 @@
         </div>
         <p class="copyright">&copy; <span id="year"></span> KONDA JOSEPH. All rights reserved.</p>
     </footer>
-
-
-
-
-
-
-
 
     <button type="button" class="to-top" id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 

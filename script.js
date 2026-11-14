@@ -140,5 +140,35 @@ if (!reduceMotion && "IntersectionObserver" in window) {
 const linkedin = $("#linkedin-link");
 if (linkedin && linkedin.getAttribute("href") === "#") linkedin.hidden = true;
 
-/* 9. Footer year */
+/* 9. Show / hide the extra projects (two are featured by default) */
+const projToggle = $("#projects-toggle");
+const extraProjects = $$(".project-extra");
+if (projToggle) {
+  projToggle.addEventListener("click", () => {
+    const open = projToggle.getAttribute("aria-expanded") !== "true";
+    extraProjects.forEach((card) => (card.hidden = !open));
+    $("#projects-grid").classList.toggle("expanded", open);
+    projToggle.setAttribute("aria-expanded", open);
+    projToggle.textContent = open ? projToggle.dataset.less : projToggle.dataset.more;
+    if (open) extraProjects[0]?.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest" });
+  });
+}
+
+/* 10. Fade sections in as they scroll into view */
+const revealEls = $$(".section-title, .section-lead, .skill-group, .grid-card, .process-steps li, .projects-card, .contact-card, .contact-form");
+revealEls.forEach((el) => el.classList.add("reveal"));
+if (reduceMotion || !("IntersectionObserver" in window)) {
+  revealEls.forEach((el) => el.classList.add("in"));
+} else {
+  const revealObs = new IntersectionObserver((entries, obs) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add("in");
+      obs.unobserve(e.target);
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach((el) => revealObs.observe(el));
+}
+
+/* 11. Footer year */
 $("#year").textContent = new Date().getFullYear();
